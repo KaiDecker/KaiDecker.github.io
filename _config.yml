@@ -1,5 +1,6 @@
-title: KaiDecker
-description: "Kai 的个人网站：项目、文章与持续学习的记录。"
+title: 咸蛋超人迪卡
+title_en: KaiDecker
+description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学、计算机基础、Agent、后端、机器学习与项目记录。"
 url: "https://kaidecker.github.io"
 baseurl: ""
 lang: zh-CN
@@ -10,10 +11,15 @@ permalink: /writing/:year/:month/:day/:title/
 
 # Personal information
 author:
-  name: Kai
+  name: 咸蛋超人迪卡
+  name_en: KaiDecker
   handle: KaiDecker
+  school: 北京林业大学
+  major: 统计学
+  graduation: 2028
   location: Beijing, China
   github: https://github.com/KaiDecker
+  email: ""
 
 # Keep the generated site clean
 exclude:

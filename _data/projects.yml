@@ -1,7 +1,8 @@
 - title: Agent Bench Ops
   repo: agent-bench-ops
   eyebrow: AI Agent · Evaluation
-  description: 面向工具调用 Agent 的评测与可观测性实践，关注运行过程、失败恢复与结果分析，而不只盯着最终分数。
+  description: 面向工具调用 Agent 的评测与可观测性实践，关注运行过程、失败定位、恢复机制和结果分析，而不只看最终分数。
+  description_en: An evaluation and observability project for tool-using agents, with attention to failures, recovery, and execution traces.
   tech:
     - Python
     - AI Agents
@@ -10,22 +11,11 @@
   accent: violet
   featured: true
 
-- title: PlateReader YOLOv8
-  repo: PlateReader-YOLOv8
-  eyebrow: Computer Vision
-  description: 基于 YOLOv8 的车牌检测与识别实验，记录从数据处理、训练到推理验证的完整流程。
-  tech:
-    - Python
-    - YOLOv8
-    - OpenCV
-  url: https://github.com/KaiDecker/PlateReader-YOLOv8
-  accent: blue
-  featured: true
-
 - title: CUMCM 2025 · B
   repo: CUMCM-2025-B
   eyebrow: Mathematical Modeling
-  description: 全国大学生数学建模竞赛 B 题的代码、分析与支撑材料归档，也是一次把统计推断落到真实题目里的练习。
+  description: 全国大学生数学建模竞赛 B 题的代码、分析与支撑材料归档，也是一次将统计分析、建模和协作放进限时问题中的实践。
+  description_en: Code, analysis, and supporting materials from the 2025 CUMCM problem B.
   tech:
     - Jupyter
     - Modeling
@@ -34,10 +24,24 @@
   accent: amber
   featured: true
 
+- title: PlateReader YOLOv8
+  repo: PlateReader-YOLOv8
+  eyebrow: Computer Vision
+  description: 基于 YOLOv8 的车牌检测与识别实验，记录数据处理、模型训练、推理验证和工程实现过程。
+  description_en: A YOLOv8-based license plate detection and recognition experiment, from data preparation to inference.
+  tech:
+    - Python
+    - YOLOv8
+    - OpenCV
+  url: https://github.com/KaiDecker/PlateReader-YOLOv8
+  accent: blue
+  featured: true
+
 - title: CS50
   repo: CS50
   eyebrow: Computer Science
-  description: 从 C、Python 与基础算法开始，系统补齐计算机科学基础的课程练习和阶段记录。
+  description: CS50 课程练习与阶段记录，从 C、Python、算法和基础 Web 开发入手，补齐计算机科学基础。
+  description_en: Coursework and exercises covering C, Python, algorithms, and introductory web development.
   tech:
     - C
     - Python

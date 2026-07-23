@@ -8,9 +8,9 @@
 
   {% assign page_title = page.title | default: site.title %}
   {% if page.url == '/' %}
-    <title>{{ site.title }} — 统计、数据与工程实践</title>
+    <title>{{ site.title }} / {{ site.title_en }} — 统计学、系统与项目</title>
   {% else %}
-    <title>{{ page_title }} · {{ site.title }}</title>
+    <title>{{ page_title }} · {{ site.title }} / {{ site.title_en }}</title>
   {% endif %}
 
   <meta name="description" content="{{ page.description | default: site.description | strip_html | escape }}">

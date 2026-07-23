@@ -1,13 +1,17 @@
 <footer class="site-footer">
   <div class="shell footer-inner">
     <div>
-      <strong>KaiDecker</strong>
-      <p>把模型、代码和真实问题连接起来。</p>
+      <strong>咸蛋超人迪卡 <span class="footer-handle">/ KaiDecker</span></strong>
+      <p>从统计学出发，继续学习系统、工程与智能体。</p>
+      <p lang="en">From statistics to systems, engineering, and agents.</p>
     </div>
     <div class="footer-links">
       <a href="https://github.com/KaiDecker" target="_blank" rel="noreferrer">GitHub</a>
       <a href="{{ '/projects/' | relative_url }}">Projects</a>
       <a href="{{ '/writing/' | relative_url }}">Writing</a>
+      {% if site.author.email and site.author.email != "" %}
+        <a href="mailto:{{ site.author.email }}">Email</a>
+      {% endif %}
     </div>
     <p class="footer-meta">© {{ 'now' | date: '%Y' }} KaiDecker · Built with Jekyll & GitHub Pages</p>
   </div>
