@@ -32,6 +32,8 @@ permalink: /about/
 
 也完成过 **CS61A、CS61B 和 CS50**，通过课程练习接触编程抽象、数据结构、算法、C、Python、Java 等内容。
 
+在校课程方面，目前累计 GPA 为 **3.66 / 4.00**，平均成绩 **88.64**，专业排名 **12 / 66**。我把与方向更相关的课程整理在[课程页]({{ '/coursework/' | relative_url }})，而不是直接公开整张教务系统截图。
+
 ### 工程与项目
 
 目前更想深入的方向包括：
@@ -65,15 +67,11 @@ permalink: /about/
 - 项目页保存我真正做过的东西；
 - 写作页整理学习、失败和复盘；
 - 关于页记录方向如何变化；
-- 未来也可能加入课程与成绩页面，但只展示经过筛选、适合公开的信息。
+- 课程页只展示经过筛选、与方向相关且适合公开的信息。
 
-{% if site.author.email and site.author.email != "" %}
 ## 联系 / Contact
 
-- Email: [{{ site.author.email }}](mailto:{{ site.author.email }})
+{% for contact in site.author.emails %}
+- {{ contact.label }} / {{ contact.label_en }}: [{{ contact.address }}](mailto:{{ contact.address }})
+{% endfor %}
 - GitHub: [KaiDecker](https://github.com/KaiDecker)
-{% else %}
-## 联系 / Contact
-
-目前可以通过 [GitHub](https://github.com/KaiDecker) 找到我。邮箱确认后，填写 `_config.yml` 中的 `author.email`，网站会自动显示联系入口。
-{% endif %}

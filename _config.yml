@@ -1,6 +1,6 @@
 title: 咸蛋超人迪卡
 title_en: KaiDecker
-description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学、计算机基础、Agent、后端、机器学习与项目记录。"
+description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学、计算机基础、Agent、后端、机器学习、课程与项目记录。"
 url: "https://kaidecker.github.io"
 baseurl: ""
 lang: zh-CN
@@ -19,7 +19,22 @@ author:
   graduation: 2028
   location: Beijing, China
   github: https://github.com/KaiDecker
-  email: ""
+  email: reunited9130@bjfu.edu.cn
+  emails:
+    - label: 校园邮箱
+      label_en: University
+      address: reunited9130@bjfu.edu.cn
+    - label: QQ 邮箱
+      label_en: QQ Mail
+      address: 2280203395@qq.com
+
+# Academic snapshot, based on the transcript shared in July 2026.
+academic:
+  gpa: "3.66 / 4.00"
+  average: "88.64 / 100"
+  credits: "95.7"
+  class_rank: "7"
+  major_rank: "12 / 66"
 
 # Keep the generated site clean
 exclude:

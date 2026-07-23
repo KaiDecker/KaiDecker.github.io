@@ -14,6 +14,7 @@
 
 - `/`：首页
 - `/projects/`：项目归档
+- `/coursework/`：精选课程与学业概览
 - `/writing/`：文章归档
 - `/about/`：个人介绍
 
@@ -29,14 +30,9 @@
 - `_includes/header.html`
 - `_includes/footer.html`
 
-邮箱确认后，在 `_config.yml` 中填写：
+联系邮箱位于 `_config.yml` 的 `author.email` 与 `author.emails`。默认使用北京林业大学校园邮箱作为主邮箱，并保留 QQ 邮箱作为备用联系方式。
 
-```yaml
-author:
-  email: "your-email@example.com"
-```
-
-网站会自动在 About 和页脚显示联系入口。
+Gmail 地址目前没有加入，因为你提供的 `a2280203395@gmail` 缺少完整域名；确认后再补最稳妥。
 
 ### 更新项目
 
