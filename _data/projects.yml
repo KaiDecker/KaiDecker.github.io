@@ -1,0 +1,47 @@
+- title: Agent Bench Ops
+  repo: agent-bench-ops
+  eyebrow: AI Agent · Evaluation
+  description: 面向工具调用 Agent 的评测与可观测性实践，关注运行过程、失败恢复与结果分析，而不只盯着最终分数。
+  tech:
+    - Python
+    - AI Agents
+    - Evaluation
+  url: https://github.com/KaiDecker/agent-bench-ops
+  accent: violet
+  featured: true
+
+- title: PlateReader YOLOv8
+  repo: PlateReader-YOLOv8
+  eyebrow: Computer Vision
+  description: 基于 YOLOv8 的车牌检测与识别实验，记录从数据处理、训练到推理验证的完整流程。
+  tech:
+    - Python
+    - YOLOv8
+    - OpenCV
+  url: https://github.com/KaiDecker/PlateReader-YOLOv8
+  accent: blue
+  featured: true
+
+- title: CUMCM 2025 · B
+  repo: CUMCM-2025-B
+  eyebrow: Mathematical Modeling
+  description: 全国大学生数学建模竞赛 B 题的代码、分析与支撑材料归档，也是一次把统计推断落到真实题目里的练习。
+  tech:
+    - Jupyter
+    - Modeling
+    - Data Analysis
+  url: https://github.com/KaiDecker/CUMCM-2025-B
+  accent: amber
+  featured: true
+
+- title: CS50
+  repo: CS50
+  eyebrow: Computer Science
+  description: 从 C、Python 与基础算法开始，系统补齐计算机科学基础的课程练习和阶段记录。
+  tech:
+    - C
+    - Python
+    - Algorithms
+  url: https://github.com/KaiDecker/CS50
+  accent: green
+  featured: false

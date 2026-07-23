@@ -1,0 +1,25 @@
+title: KaiDecker
+description: "Kai 的个人网站：项目、文章与持续学习的记录。"
+url: "https://kaidecker.github.io"
+baseurl: ""
+lang: zh-CN
+timezone: Asia/Shanghai
+
+markdown: kramdown
+permalink: /writing/:year/:month/:day/:title/
+
+# Personal information
+author:
+  name: Kai
+  handle: KaiDecker
+  location: Beijing, China
+  github: https://github.com/KaiDecker
+
+# Keep the generated site clean
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor

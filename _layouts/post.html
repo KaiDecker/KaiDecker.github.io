@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post shell narrow-shell">
+  <header class="post-header reveal">
+    <a class="back-link" href="{{ '/writing/' | relative_url }}">← 返回写作</a>
+    <p class="eyebrow">{{ page.date | date: '%Y年%-m月%-d日' }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
+    {% if page.tags %}
+      <div class="tag-row" aria-label="文章标签">
+        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="prose post-content reveal reveal-delay-1">
+    {{ content }}
+  </div>
+</article>

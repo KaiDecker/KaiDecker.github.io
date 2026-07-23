@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f5ef"/>
+  <circle cx="1010" cy="70" r="320" fill="#c7d7ff" opacity=".75"/>
+  <circle cx="1050" cy="610" r="360" fill="#d7efc2" opacity=".65"/>
+  <path d="M0 500C250 400 450 590 700 470s340-170 500-80v240H0z" fill="#ece6d8"/>
+  <rect x="90" y="86" width="76" height="76" rx="22" fill="#1b1c18"/>
+  <path d="M113 106v37h9v-14l15 14h13l-19-18 18-19h-12l-15 16v-16z" fill="#f7f5ef"/>
+  <text x="90" y="260" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="700" fill="#1b1c18">KaiDecker</text>
+  <text x="92" y="330" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#56574f">Statistics · Data · Engineering</text>
+  <text x="92" y="475" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="600" fill="#1b1c18">把数据变成判断，</text>
+  <text x="92" y="535" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="600" fill="#1b1c18">把想法做成东西。</text>
+</svg>

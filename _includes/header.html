@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="回到首页">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span class="brand-text">KaiDecker</span>
+    </a>
+
+    <button class="icon-button nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
+      <span class="nav-icon-open">{% include icon.html name='menu' %}</span>
+      <span class="nav-icon-close">{% include icon.html name='close' %}</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>首页</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}aria-current="page"{% endif %}>项目</a>
+      <a href="{{ '/writing/' | relative_url }}" {% if page.url contains '/writing' %}aria-current="page"{% endif %}>写作</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}aria-current="page"{% endif %}>关于</a>
+      <a class="nav-github" href="https://github.com/KaiDecker" target="_blank" rel="noreferrer" aria-label="在 GitHub 查看 KaiDecker">
+        {% include icon.html name='github' %}
+      </a>
+      <button class="icon-button theme-toggle" type="button" aria-label="切换深色模式">
+        <span class="theme-icon-light">{% include icon.html name='sun' %}</span>
+        <span class="theme-icon-dark">{% include icon.html name='moon' %}</span>
+      </button>
+    </nav>
+  </div>
+</header>
