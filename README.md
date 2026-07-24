@@ -1,12 +1,11 @@
 # 咸蛋超人迪卡 / KaiDecker
 
-个人网站与长期维护的数字花园，使用 Jekyll 构建并部署到 GitHub Pages。
+个人网站，使用 Jekyll 构建并部署到 GitHub Pages。
 
 网站内容围绕：
 
-- 北京林业大学统计学本科（预计 2028 毕业）
-- Agent、后端、机器学习与测试开发
-- 计算机 408、CS61A、CS61B、CS50 学习记录
+- 统计学相关
+- 计算机相关，如Agent、后端、机器学习与测试开发
 - 数学建模、数据分析与公开项目
 - 游戏、吉他与其他个人写作
 
@@ -30,9 +29,7 @@
 - `_includes/header.html`
 - `_includes/footer.html`
 
-联系邮箱位于 `_config.yml` 的 `author.email` 与 `author.emails`。默认使用北京林业大学校园邮箱作为主邮箱，并保留 QQ 邮箱作为备用联系方式。
-
-Gmail 地址目前没有加入，因为你提供的 `a2280203395@gmail` 缺少完整域名；确认后再补最稳妥。
+联系邮箱位于 `_config.yml` 的 `author.email` 与 `author.emails`。
 
 ### 更新项目
 
@@ -60,17 +57,3 @@ bundle exec jekyll serve
 ```
 
 打开 `http://localhost:4000`。
-
-## 部署
-
-GitHub 仓库进入：
-
-`Settings → Pages → Deploy from a branch → main → /(root)`
-
-首次提交建议：
-
-```bash
-git add .
-git commit -m "feat: build personal website"
-git push origin main
-```
