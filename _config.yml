@@ -27,14 +27,22 @@ author:
     - label: QQ 邮箱
       label_en: QQ Mail
       address: 2280203395@qq.com
+    - label: Google 邮箱
+      label_en: Google Mail
+      address: a2280203395@gmail.com
 
-# Academic snapshot, based on the transcript shared in July 2026.
+# Academic snapshot
 academic:
   gpa: "3.66 / 4.00"
   average: "88.64 / 100"
   credits: "95.7"
-  class_rank: "7"
-  major_rank: "12 / 66"
+
+  cumulative_class_rank: "7"
+  cumulative_major_rank: "12 / 66"
+
+  latest_year: "2025–2026"
+  latest_year_class_rank: "4"
+  latest_year_major_rank: "7"
 
 # Keep the generated site clean
 exclude:
