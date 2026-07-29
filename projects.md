@@ -24,9 +24,36 @@ permalink: /projects/
           {% for tech in project.tech %}<span class="tag">{{ tech }}</span>{% endfor %}
         </div>
       </div>
-      <a class="button button-ghost archive-project-link" href="{{ project.url }}" target="_blank" rel="noreferrer">
-        查看仓库 {% include icon.html name='external' %}
-      </a>
+      <div class="archive-project-actions">
+        {% if project.case_study_url %}
+          <a
+            class="button button-primary"
+            href="{{ project.case_study_url | relative_url }}"
+          >
+            阅读描述
+          </a>
+        {% endif %}
+
+        {% if project.repository_url %}
+          <a
+            class="button button-ghost"
+            href="{{ project.repository_url }}"
+            target="_blank"
+            rel="noreferrer"
+          >
+            查看仓库 {% include icon.html name='external' %}
+          </a>
+        {% elsif project.url %}
+          <a
+            class="button button-ghost"
+            href="{{ project.url }}"
+            target="_blank"
+            rel="noreferrer"
+          >
+            查看仓库 {% include icon.html name='external' %}
+          </a>
+        {% endif %}
+      </div>
     </article>
   {% endfor %}
 </section>
