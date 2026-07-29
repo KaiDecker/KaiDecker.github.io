@@ -5,9 +5,12 @@
   description_en: An evaluation and observability project for tool-using agents, with attention to failures, recovery, and execution traces.
   tech:
     - Python
-    - AI Agents
-    - Evaluation
-  url: https://github.com/KaiDecker/agent-bench-ops
+    - FastAPI
+    - LangGraph
+    - PostgreSQL
+    - Redis
+  case_study_url: /projects/agent-bench-ops/
+  repository_url: https://github.com/KaiDecker/agent-bench-ops
   accent: violet
   featured: true
 
