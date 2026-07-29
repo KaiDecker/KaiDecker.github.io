@@ -621,6 +621,23 @@ html[data-theme="dark"] .project-card::before {
   gap: 16px;
 }
 
+.project-links {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.project-links .text-link {
+  font-size: 13px;
+}
+
+.project-links .round-link {
+  width: 42px;
+  height: 42px;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -1274,12 +1291,17 @@ html[data-theme="dark"] .project-card::before {
   }
 
   .project-footer {
-    align-items: start;
+    align-items: stretch;
     flex-direction: column;
   }
 
-  .round-link {
-    align-self: flex-end;
+  .project-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .project-links .round-link {
+    align-self: auto;
   }
 
   .focus-list li {
