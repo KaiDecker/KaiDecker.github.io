@@ -1644,3 +1644,37 @@ html[data-theme="dark"] .project-card::before {
     min-height: 132px;
   }
 }
+
+/* Project archive actions */
+.archive-project-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.archive-project-actions .button {
+  min-height: 44px;
+  padding-inline: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .archive-project-actions {
+    grid-column: 2;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 430px) {
+  .archive-project-actions {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .archive-project-actions .button {
+    flex: 1 1 auto;
+  }
+}
