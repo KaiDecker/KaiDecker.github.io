@@ -1,18 +1,62 @@
-- title: Agent Bench Ops
-  repo: agent-bench-ops
-  eyebrow: AI Agent · Evaluation
-  description: 面向工具调用 Agent 的评测与可观测性实践，关注运行过程、失败定位、恢复机制和结果分析，而不只看最终分数。
-  description_en: An evaluation and observability project for tool-using agents, with attention to failures, recovery, and execution traces.
+- title: Exagium
+  repo: exagium
+  eyebrow: Agent Engineering · Evaluation
+  description: 一个 local-first、BYOA 的 coding-agent harness：运行、追踪、评测和比较不同 Agent，使用 detached Git worktree 隔离执行环境，并通过 SQLite、FastAPI read API 与 Web UI 保留可复查的执行记录。
+  description_en: A local-first, BYOA coding-agent harness for running, tracing, evaluating, and comparing agents with detached Git worktrees, SQLite, a FastAPI read API, and a Web UI.
   tech:
     - Python
     - FastAPI
-    - LangGraph
-    - PostgreSQL
-    - Redis
-  case_study_url: /projects/agent-bench-ops/
-  repository_url: https://github.com/KaiDecker/agent-bench-ops
+    - SQLite
+    - Git worktree
+    - Codex / Claude CLI
+  case_study_url: /projects/exagium/
+  repository_url: https://github.com/KaiDecker/exagium
   accent: violet
   featured: true
+
+- title: OPEN SHIFT
+  repo: va11-open-shift
+  eyebrow: Game Mod · Agent-assisted Content
+  description: VA-11 HALL-A Windows 社区 Mod：在原版结局后延续酒吧叙事，保留原版调酒、音乐与存档体验；动态内容由 DeepSeek 生成，并以本地规则作为 fallback。预览版使用隔离副本，不修改 Steam 原版。
+  description_en: A Windows community mod for VA-11 HALL-A that continues the bar's story after the original ending, preserving its drink-making, music, and save experience with DeepSeek-generated content and a local rule-based fallback.
+  tech:
+    - Windows
+    - DeepSeek
+    - Local rule fallback
+    - Modding
+  case_study_url: /projects/va11-open-shift/
+  repository_url: https://github.com/KaiDecker/va11-open-shift
+  accent: amber
+  featured: true
+
+- title: "Hermes Agent · PR #82357"
+  repo: hermes-agent-pr-82357
+  eyebrow: Open Source · Regression Fix
+  description: 修复 DingTalk lazy dependency 恢复后仍引用 stale _IncomingHandler inheritance 的问题，并加入回归测试；focused test suite 通过 32 项。
+  description_en: Fixed stale _IncomingHandler inheritance after restoring the DingTalk lazy dependency, with a regression test; the focused suite passed all 32 tests.
+  tech:
+    - Python
+    - Regression testing
+    - Dependency handling
+  url: https://github.com/NousResearch/hermes-agent/pull/82357
+  link_label: 查看 PR
+  accent: green
+  featured: false
+
+- title: "Hermes Agent · PR #82470"
+  repo: hermes-agent-pr-82470
+  eyebrow: Open Source · Context Design
+  description: 为压缩流程增加结构化 CompressionContext 与 key_facts，同时保持 legacy string compatibility，并在进入流程前完成 sanitization；测试通过 97 项。
+  description_en: Added structured CompressionContext and key_facts to the compression flow while preserving legacy string compatibility and sanitizing inputs; 97 tests passed.
+  tech:
+    - Python
+    - Context modeling
+    - Input sanitization
+    - Compatibility
+  url: https://github.com/NousResearch/hermes-agent/pull/82470
+  link_label: 查看 PR
+  accent: blue
+  featured: false
 
 - title: CUMCM 2025 · B
   repo: CUMCM-2025-B
@@ -25,7 +69,7 @@
     - Data Analysis
   url: https://github.com/KaiDecker/CUMCM-2025-B
   accent: amber
-  featured: true
+  featured: false
 
 - title: PlateReader YOLOv8
   repo: PlateReader-YOLOv8
@@ -38,7 +82,7 @@
     - OpenCV
   url: https://github.com/KaiDecker/PlateReader-YOLOv8
   accent: blue
-  featured: true
+  featured: false
 
 - title: CS50
   repo: CS50

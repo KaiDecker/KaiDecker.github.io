@@ -33,16 +33,18 @@ author:
 
 # Academic snapshot
 academic:
-  gpa: "3.66 / 4.00"
-  average: "88.64 / 100"
-  credits: "95.7"
+  gpa: "3.71 / 4.00"
+  average: "89.18 / 100"
+  credit_product: "89.03"
+  credits: "113.1"
 
-  cumulative_class_rank: "7"
-  cumulative_major_rank: "12 / 66"
+  cumulative_class_rank: "6"
+  cumulative_major_rank: "11 / 66"
 
   latest_year: "2025–2026"
-  latest_year_class_rank: "4"
-  latest_year_major_rank: "7"
+  latest_year_credit_product: "91.57"
+  latest_year_class_rank: "3"
+  latest_year_major_rank: "4"
 
 # Keep the generated site clean
 exclude:

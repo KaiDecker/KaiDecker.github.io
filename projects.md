@@ -1,14 +1,14 @@
 ---
 layout: default
 title: 项目 / Projects
-description: "咸蛋超人迪卡的 Agent、机器学习、数学建模与计算机科学项目。"
+description: "咸蛋超人迪卡的 Agent 工程、开源协作、机器学习、数学建模与计算机科学项目。"
 permalink: /projects/
 ---
 <section class="page-hero shell narrow-shell reveal">
   <p class="eyebrow">PROJECTS</p>
   <h1>项目不是技能清单，<br>是学习留下的证据。</h1>
-  <p class="page-lead">这里收录完整度不同的实践：Agent、计算机视觉、数学建模与计算机基础。它们未必都成熟，但每一个都比自评百分比更接近真实。</p>
-  <p class="secondary-copy" lang="en">A growing archive of agent engineering, computer vision, mathematical modeling, and computer science coursework.</p>
+  <p class="page-lead">这里收录我正在推进或参与过的实践：以 Agent 工程和开源协作为主，也包括计算机视觉、数学建模与计算机基础。仓库保存代码，这里说明问题、方法与结果。</p>
+  <p class="secondary-copy" lang="en">A growing archive centered on agent engineering and open-source collaboration, alongside computer vision, mathematical modeling, and computer science coursework.</p>
 </section>
 
 <section class="shell section project-archive">
@@ -41,7 +41,7 @@ permalink: /projects/
             target="_blank"
             rel="noreferrer"
           >
-            查看仓库 {% include icon.html name='external' %}
+            {{ project.link_label | default: '查看仓库' }} {% include icon.html name='external' %}
           </a>
         {% elsif project.url %}
           <a
@@ -50,7 +50,7 @@ permalink: /projects/
             target="_blank"
             rel="noreferrer"
           >
-            查看仓库 {% include icon.html name='external' %}
+            {{ project.link_label | default: '查看仓库' }} {% include icon.html name='external' %}
           </a>
         {% endif %}
       </div>
