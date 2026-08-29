@@ -23,7 +23,7 @@ permalink: /coursework/
   </div>
   <div class="academic-metric">
     <span class="metric-label">专业排名</span>
-    <strong class="metric-value">{{ site.academic.major_rank }}</strong>
+    <strong class="metric-value">{{ site.academic.cumulative_major_rank }}</strong>
     <span class="metric-caption">Major rank</span>
   </div>
   <div class="academic-metric">
@@ -33,7 +33,7 @@ permalink: /coursework/
   </div>
 </div>
 
-<p class="academic-note">截至本次成绩单查询：班级排名第 {{ site.academic.class_rank }}，专业排名 {{ site.academic.major_rank }}。数值会随后续学期更新。</p>
+<p class="academic-note">截至本次成绩单查询：班级排名第 {{ site.academic.cumulative_class_rank }}，专业排名 {{ site.academic.cumulative_major_rank }}。学分积为 {{ site.academic.credit_product }}，数值会随后续学期更新。</p>
 
 ## 统计与数据 / Statistics & Data
 
@@ -107,9 +107,9 @@ permalink: /coursework/
   </div>
   <div class="trend-row" role="row">
     <span role="cell">2025–2026</span>
-    <strong role="cell">91.49</strong>
-    <span role="cell">4</span>
-    <span role="cell">7</span>
+    <strong role="cell">{{ site.academic.latest_year_credit_product }}</strong>
+    <span role="cell">{{ site.academic.latest_year_class_rank }}</span>
+    <span role="cell">{{ site.academic.latest_year_major_rank }}</span>
   </div>
 </div>
 

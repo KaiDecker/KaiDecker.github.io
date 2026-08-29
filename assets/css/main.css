@@ -852,6 +852,14 @@ html[data-theme="dark"] .project-card::before {
   font-weight: 740;
 }
 
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 30px rgba(39, 36, 29, .08);
+}
+
 .prose blockquote {
   margin-inline: 0;
   padding: 12px 0 12px 22px;
