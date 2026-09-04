@@ -29,18 +29,21 @@
 - `_includes/header.html`
 - `_includes/footer.html`
 
-联系邮箱位于 `_config.yml` 的 `author.email` 与 `author.emails`。
+公开联系邮箱位于 `_config.yml` 的 `author.email`。
 
 ### 更新项目
 
 编辑 `_data/projects.yml`。首页读取 `featured: true` 的项目，项目页展示全部项目。
 
-每个项目支持中英文简介：
+每个项目支持中英文简介和公开状态：
 
 ```yaml
 description: 中文简介
 description_en: English description
+status: 持续迭代
 ```
+
+学业数据和项目归档的公开更新时间位于 `_config.yml` 的 `content_dates`。
 
 ### 写文章
 

@@ -11,6 +11,7 @@
     - Codex / Claude CLI
   case_study_url: /projects/exagium/
   repository_url: https://github.com/KaiDecker/exagium
+  status: 持续迭代
   accent: violet
   featured: true
 
@@ -26,6 +27,7 @@
     - Modding
   case_study_url: /projects/va11-open-shift/
   repository_url: https://github.com/KaiDecker/va11-open-shift
+  status: 预览版
   accent: amber
   featured: true
 
@@ -40,6 +42,7 @@
     - Dependency handling
   url: https://github.com/NousResearch/hermes-agent/pull/82357
   link_label: 查看 PR
+  status: PR 记录
   accent: green
   featured: false
 
@@ -55,6 +58,7 @@
     - Compatibility
   url: https://github.com/NousResearch/hermes-agent/pull/82470
   link_label: 查看 PR
+  status: PR 记录
   accent: blue
   featured: false
 
@@ -68,6 +72,7 @@
     - Modeling
     - Data Analysis
   url: https://github.com/KaiDecker/CUMCM-2025-B
+  status: 竞赛归档
   accent: amber
   featured: false
 
@@ -81,6 +86,7 @@
     - YOLOv8
     - OpenCV
   url: https://github.com/KaiDecker/PlateReader-YOLOv8
+  status: 实验归档
   accent: blue
   featured: false
 
@@ -94,5 +100,6 @@
     - Python
     - Algorithms
   url: https://github.com/KaiDecker/CS50
+  status: 课程归档
   accent: green
   featured: false

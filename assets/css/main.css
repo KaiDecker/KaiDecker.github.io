@@ -657,6 +657,19 @@ html[data-theme="dark"] .project-card::before {
   font-weight: 650;
 }
 
+.project-status {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 28%, var(--line));
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface-strong));
+}
+
+.content-freshness {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .round-link {
   flex: 0 0 auto;
   display: grid;
@@ -922,10 +935,6 @@ html[data-theme="dark"] .project-card::before {
 .archive-project-main > p:not(.project-eyebrow) {
   max-width: 660px;
   margin-bottom: 22px;
-}
-
-.archive-project-link {
-  margin-top: 8px;
 }
 
 .note-card {
@@ -1269,11 +1278,6 @@ html[data-theme="dark"] .project-card::before {
     gap: 12px;
   }
 
-  .archive-project-link {
-    grid-column: 2;
-    justify-self: start;
-  }
-
   .writing-item {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -1320,8 +1324,7 @@ html[data-theme="dark"] .project-card::before {
     grid-template-columns: 1fr;
   }
 
-  .archive-project-index,
-  .archive-project-link {
+  .archive-project-index {
     grid-column: 1;
   }
 }
