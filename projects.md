@@ -9,6 +9,7 @@ permalink: /projects/
   <h1>项目不是技能清单，<br>是学习留下的证据。</h1>
   <p class="page-lead">这里收录我正在推进或参与过的实践：以 Agent 工程和开源协作为主，也包括计算机视觉、数学建模与计算机基础。仓库保存代码，这里说明问题、方法与结果。</p>
   <p class="secondary-copy" lang="en">A growing archive centered on agent engineering and open-source collaboration, alongside computer vision, mathematical modeling, and computer science coursework.</p>
+  <p class="content-freshness">项目归档更新于 {{ site.content_dates.projects }}；具体开发状态以对应仓库为准。</p>
 </section>
 
 <section class="shell section project-archive">
@@ -21,6 +22,7 @@ permalink: /projects/
         <p>{{ project.description }}</p>
         {% if project.description_en %}<p class="project-description-en archive-description-en" lang="en">{{ project.description_en }}</p>{% endif %}
         <div class="tag-row">
+          {% if project.status %}<span class="tag project-status">{{ project.status }}</span>{% endif %}
           {% for tech in project.tech %}<span class="tag">{{ tech }}</span>{% endfor %}
         </div>
       </div>

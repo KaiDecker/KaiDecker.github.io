@@ -7,7 +7,7 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
 <section class="hero shell">
   <div class="hero-copy reveal">
     <p class="eyebrow">STATISTICS · SYSTEMS · AGENTS</p>
-    <h1>在统计学与<br>计算机之间。</h1>
+    <h1>统计学 × 计算机科学</h1>
 
     <p class="hero-lead">
       你好，我是 {{ site.author.name }}，也可以叫我 {{ site.author.name_en }}。
@@ -99,6 +99,9 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
 
         <div class="project-footer">
           <div class="tag-row">
+            {% if project.status %}
+              <span class="tag project-status">{{ project.status }}</span>
+            {% endif %}
             {% for tech in project.tech %}
               <span class="tag">{{ tech }}</span>
             {% endfor %}
@@ -110,7 +113,7 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
                 class="text-link"
                 href="{{ project.case_study_url | relative_url }}"
               >
-                完整复盘 {% include icon.html name='arrow' %}
+                相关描述 {% include icon.html name='arrow' %}
               </a>
             {% endif %}
 
@@ -136,7 +139,7 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
   <div class="section-heading reveal">
     <div>
       <p class="eyebrow">LEARNING PATH</p>
-      <h2>专业是起点，基础要自己补齐。</h2>
+      <h2>立足统计本源，自建计算机基石</h2>
     </div>
   </div>
 
@@ -148,11 +151,11 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
 
       <p>
         {{ site.author.school }}。
-        统计学基础让我更在意数据、假设、评价方法与结论边界。
+        统计学让我对数据分布、假设检验、评估指标与结论边界保持着天然的敏感度。
       </p>
 
       <p class="secondary-copy compact-copy" lang="en">
-        Undergraduate student in Statistics.
+        B.S. candidate in Statistics. Trained to think critically about data, hypotheses, and evaluation metrics.
       </p>
     </article>
 
@@ -162,13 +165,12 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
       <h3>计算机 408</h3>
 
       <p>
-        已完成一轮系统学习，覆盖数据结构、计算机组成原理、操作系统与计算机网络，
-        并继续通过项目反复巩固。
+        已系统性完成DS、CO、OS和CN的首轮学习，并正通过工程实践与项目迭代将理论转化为肌肉记忆。
       </p>
 
       <p class="secondary-copy compact-copy" lang="en">
-        Completed a structured first pass through the four core subjects
-        covered by China’s 408 Computer Science exam.
+        Completed a structured first pass through China's 408 CS core (DS, Arch, OS, Networks), now reinforcing
+        theory through hands-on projects.
       </p>
     </article>
 
@@ -178,7 +180,7 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
       <h3>CS61A · CS61B · CS50</h3>
 
       <p>
-        通过课程练习补齐编程、抽象、数据结构、算法与计算机科学基础。
+        跟随全球顶级公开课，重塑编程范式。重点锤炼计算思维、代码抽象能力与算法直觉。
       </p>
 
       <p class="secondary-copy compact-copy" lang="en">
@@ -196,6 +198,7 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
         · 平均成绩 {{ site.academic.average }}
         · 累计专业排名 {{ site.academic.cumulative_major_rank }}
       </strong>
+      <span class="content-freshness">数据截至 {{ site.content_dates.academic }}</span>
     </div>
 
     <a class="text-link" href="{{ '/coursework/' | relative_url }}">
@@ -271,7 +274,7 @@ description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学本科
 
 <section class="closing shell reveal">
   <p class="eyebrow">MORE THAN A RESUME</p>
-  <h2>这里不只记录“会什么”，<br>也记录我是怎么走到这里的。</h2>
+  <h2>这里不只记录“会什么”，<br>也记录我是如何抵达此处的。</h2>
 
   <p class="closing-copy" lang="en">
     Projects, notes, detours, games, guitar —

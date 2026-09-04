@@ -32,7 +32,7 @@ permalink: /about/
 
 也完成过 **CS61A、CS61B 和 CS50**，通过课程练习接触编程抽象、数据结构、算法、C、Python、Java 等内容。
 
-在校课程方面，目前累计 GPA 为 **{{ site.academic.gpa }}**，算术平均分 **{{ site.academic.average }}**，学分积 **{{ site.academic.credit_product }}**，已获学分 **{{ site.academic.credits }}**；当前查询班级排名第 **{{ site.academic.cumulative_class_rank }}**，专业排名 **{{ site.academic.cumulative_major_rank }}**。我把与方向更相关的课程整理在[课程页]({{ '/coursework/' | relative_url }})，而不是直接公开整张教务系统截图。
+在校课程方面，截至 **{{ site.content_dates.academic }}**，累计 GPA 为 **{{ site.academic.gpa }}**，算术平均分 **{{ site.academic.average }}**，学分积 **{{ site.academic.credit_product }}**，已获学分 **{{ site.academic.credits }}**；当前查询班级排名第 **{{ site.academic.cumulative_class_rank }}**，专业排名 **{{ site.academic.cumulative_major_rank }}**。我把与方向更相关的课程整理在[课程页]({{ '/coursework/' | relative_url }})，而不是直接公开整张教务系统截图。
 
 ### 工程与项目
 
@@ -71,7 +71,5 @@ permalink: /about/
 
 ## 联系 / Contact
 
-{% for contact in site.author.emails %}
-- {{ contact.label }} / {{ contact.label_en }}: [{{ contact.address }}](mailto:{{ contact.address }})
-{% endfor %}
+- 校园邮箱 / University: [{{ site.author.email }}](mailto:{{ site.author.email }})
 - GitHub: [KaiDecker](https://github.com/KaiDecker)

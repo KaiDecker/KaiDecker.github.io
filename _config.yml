@@ -20,16 +20,11 @@ author:
   location: Beijing, China
   github: https://github.com/KaiDecker
   email: reunited9130@bjfu.edu.cn
-  emails:
-    - label: 校园邮箱
-      label_en: University
-      address: reunited9130@bjfu.edu.cn
-    - label: QQ 邮箱
-      label_en: QQ Mail
-      address: 2280203395@qq.com
-    - label: Google 邮箱
-      label_en: Google Mail
-      address: a2280203395@gmail.com
+
+# Public content freshness
+content_dates:
+  academic: "2026 年 8 月 29 日"
+  projects: "2026 年 8 月 29 日"
 
 # Academic snapshot
 academic:
@@ -52,5 +47,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
+  - PROJECT_STATE.md
+  - CURRENT_TASK.md
+  - CONTEXT_INDEX.md
+  - scripts
+  - work
   - node_modules
   - vendor
