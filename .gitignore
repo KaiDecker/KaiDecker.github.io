@@ -1,8 +1,14 @@
 _site/
+/work/math-check-site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 .bundle/
 vendor/
+!assets/css/vendor/
+!assets/css/vendor/nes.min.css
+!assets/js/vendor/
+!assets/js/vendor/mathjax/
+!assets/js/vendor/mathjax/tex-svg.js
 Gemfile.lock
 .DS_Store
