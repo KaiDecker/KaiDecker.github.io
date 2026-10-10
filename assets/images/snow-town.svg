@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-label="像素风雪夜小镇">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop offset="0" stop-color="#10182f"/>
+      <stop offset=".72" stop-color="#26324c"/>
+      <stop offset="1" stop-color="#49566b"/>
+    </linearGradient>
+  </defs>
+  <g shape-rendering="crispEdges">
+    <rect width="1200" height="820" fill="url(#sky)"/>
+
+    <!-- stars -->
+    <g fill="#eef1df">
+      <rect x="95" y="84" width="4" height="4"/><rect x="182" y="177" width="3" height="3"/>
+      <rect x="284" y="91" width="3" height="3"/><rect x="391" y="146" width="4" height="4"/>
+      <rect x="523" y="67" width="3" height="3"/><rect x="612" y="186" width="4" height="4"/>
+      <rect x="742" y="88" width="3" height="3"/><rect x="1021" y="76" width="4" height="4"/>
+      <rect x="1123" y="195" width="3" height="3"/><rect x="78" y="264" width="3" height="3"/>
+      <rect x="472" y="233" width="3" height="3"/><rect x="716" y="242" width="3" height="3"/>
+      <rect x="1094" y="283" width="4" height="4"/><rect x="345" y="285" width="3" height="3"/>
+    </g>
+    <g fill="#b7c4d5">
+      <rect x="138" y="136" width="8" height="3"/><rect x="140" y="133" width="3" height="9"/>
+      <rect x="659" y="112" width="8" height="3"/><rect x="662" y="109" width="3" height="9"/>
+      <rect x="1082" y="135" width="8" height="3"/><rect x="1085" y="132" width="3" height="9"/>
+    </g>
+
+    <!-- blocky moon -->
+    <path fill="#e7e6d8" d="M900 92h70v12h18v18h12v72h-12v18h-18v12h-70v-12h-18v-18h-12v-72h12v-18h18z"/>
+    <g fill="#c9cabb"><rect x="910" y="125" width="18" height="12"/><rect x="952" y="159" width="22" height="14"/><rect x="918" y="187" width="15" height="9"/></g>
+
+    <!-- distant stepped mountains -->
+    <path fill="#303d56" d="M0 409h78v-25h44v-34h44v-28h38v-32h28v32h33v28h35v34h63v25h102v-31h41v-34h39v-27h31v27h38v34h47v31h71v-24h43v-38h44v-31h34v31h37v38h41v24h92v-24h47v-31h30v31h39v24h58v104H0z"/>
+    <path fill="#41516a" d="M0 452h105v-22h42v-27h29v27h38v22h88v-26h38v-28h32v28h46v26h97v-18h42v-35h29v35h35v18h86v-25h45v-24h34v24h42v25h98v-20h52v-30h30v30h32v20h70v142H0z"/>
+
+    <!-- far pines -->
+    <g fill="#172b37">
+      <path d="M25 502h12v-31h12v-23h13v-27h14v27h13v23h12v31h15v27H25z"/>
+      <path d="M130 478h12v-28h12v-22h13v-26h14v26h13v22h12v28h15v26h-91z"/>
+      <path d="M281 491h12v-32h12v-24h13v-28h15v28h13v24h12v32h15v28h-97z"/>
+      <path d="M442 476h12v-28h12v-23h13v-27h14v27h13v23h12v28h15v27h-91z"/>
+      <path d="M622 493h12v-30h12v-23h13v-29h15v29h13v23h12v30h14v27h-95z"/>
+      <path d="M1094 491h12v-30h12v-23h13v-29h15v29h13v23h12v30h14v27h-91z"/>
+      <path d="M1022 474h11v-25h12v-21h12v-26h15v26h13v21h12v25h13v27h-88z"/>
+    </g>
+    <g fill="#263d48">
+      <rect x="70" y="503" width="14" height="33"/><rect x="174" y="480" width="14" height="43"/>
+      <rect x="326" y="495" width="15" height="34"/><rect x="487" y="479" width="14" height="44"/>
+      <rect x="670" y="495" width="15" height="37"/><rect x="1142" y="492" width="15" height="39"/>
+    </g>
+
+    <!-- little cabins -->
+    <g>
+      <path fill="#29364a" d="M772 373h160v127H772z"/>
+      <path fill="#1a2539" d="M750 373l102-80 102 80v17H750z"/>
+      <path fill="#d9ded8" d="M752 368h200v13H752zM784 356h142v12H784zM812 344h89v12h-89z"/>
+      <rect x="800" y="406" width="34" height="40" fill="#f3bd6b"/><rect x="806" y="412" width="22" height="28" fill="#ffdb8a"/>
+      <rect x="866" y="405" width="43" height="95" fill="#493b42"/><rect x="876" y="422" width="8" height="8" fill="#f5d187"/>
+      <rect x="817" y="456" width="8" height="44" fill="#526176"/><rect x="917" y="402" width="9" height="98" fill="#192337"/>
+      <path fill="#39445b" d="M971 411h128v89H971z"/>
+      <path fill="#222d43" d="M952 411l83-68 83 68v13H952z"/>
+      <path fill="#e2e4da" d="M954 406h164v12H954zM981 394h109v12H981zM1010 382h56v12h-56z"/>
+      <rect x="988" y="438" width="25" height="27" fill="#f5c777"/><rect x="1045" y="434" width="25" height="66" fill="#58424a"/>
+    </g>
+
+    <!-- town lamps -->
+    <g>
+      <rect x="723" y="382" width="7" height="153" fill="#202a3d"/><rect x="708" y="372" width="37" height="12" fill="#202a3d"/>
+      <rect x="712" y="355" width="29" height="20" fill="#f6d98e"/><rect x="718" y="360" width="17" height="10" fill="#fff0bb"/>
+      <rect x="721" y="391" width="11" height="132" fill="#e7bf73" opacity=".08"/>
+      <rect x="1106" y="431" width="6" height="107" fill="#202a3d"/><rect x="1095" y="423" width="28" height="10" fill="#202a3d"/>
+      <rect x="1099" y="409" width="21" height="16" fill="#f6d98e"/>
+    </g>
+
+    <!-- near tree silhouettes -->
+    <g fill="#102630">
+      <path d="M-12 600h24v-55h23v-39h25v-48h31v48h24v39h23v55h25v63H-12z"/>
+      <path d="M169 577h23v-48h19v-34h24v-43h27v43h24v34h20v48h23v62H169z"/>
+      <path d="M1004 593h23v-49h20v-37h24v-46h29v46h24v37h20v49h26v69h-166z"/>
+      <path d="M1119 579h20v-44h19v-34h23v-42h28v42h23v34h20v44h25v68h-158z"/>
+    </g>
+    <g fill="#dce4e2">
+      <rect x="32" y="548" width="35" height="8"/><rect x="61" y="505" width="36" height="8"/><rect x="87" y="458" width="30" height="8"/>
+      <rect x="205" y="536" width="36" height="8"/><rect x="230" y="494" width="31" height="8"/><rect x="244" y="452" width="28" height="8"/>
+      <rect x="1041" y="552" width="39" height="8"/><rect x="1067" y="514" width="35" height="8"/><rect x="1083" y="469" width="28" height="8"/>
+      <rect x="1150" y="539" width="30" height="8"/><rect x="1165" y="499" width="30" height="8"/>
+    </g>
+
+    <!-- snowy ground and path -->
+    <path fill="#cbd6db" d="M0 561h140v13h96v-9h100v15h110v-10h107v13h138v-11h116v10h106v-15h99v12h188v246H0z"/>
+    <path fill="#edf0e9" d="M0 573h132v9h102v-8h103v11h109v-8h108v10h138v-8h116v10h106v-11h99v8h187v242H0z"/>
+    <path fill="#b7c7d1" d="M474 573h254l28 67h-310zM429 640h347l30 68H398zM367 708h465l36 72H333zM305 780h588v40H305z"/>
+    <path fill="#d4dfe2" d="M493 584h215l22 47H470zM447 652h309l25 46H422zM387 720h425l25 48H362zM332 790h536v30H332z"/>
+    <g fill="#f7f7ef">
+      <rect x="188" y="619" width="25" height="5"/><rect x="262" y="683" width="20" height="5"/>
+      <rect x="902" y="622" width="26" height="5"/><rect x="849" y="687" width="19" height="5"/>
+      <rect x="109" y="744" width="29" height="5"/><rect x="1022" y="765" width="31" height="5"/>
+      <rect x="110" y="587" width="35" height="6"/><rect x="942" y="578" width="30" height="6"/>
+    </g>
+    <g fill="#a8bac6" opacity=".8">
+      <rect x="56" y="678" width="43" height="7"/><rect x="1060" y="647" width="50" height="8"/>
+      <rect x="183" y="779" width="50" height="7"/><rect x="931" y="717" width="40" height="7"/>
+    </g>
+  </g>
+</svg>

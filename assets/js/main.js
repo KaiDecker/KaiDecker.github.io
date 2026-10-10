@@ -29,6 +29,112 @@
     applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark');
   });
 
+  const snowdinHome = document.querySelector('[data-snowdin-home]');
+  if (snowdinHome) {
+    const townScene = snowdinHome.querySelector('[data-town-scene]');
+    const shopScene = snowdinHome.querySelector('[data-shop-scene]');
+    const townPanel = snowdinHome.querySelector('[data-town-panel]');
+    const shopPanel = snowdinHome.querySelector('[data-shop-panel]');
+    const locationLabel = snowdinHome.querySelector('[data-location-label]');
+    const shopDialogue = snowdinHome.querySelector('[data-shop-dialogue]');
+    const enterShopButtons = Array.from(snowdinHome.querySelectorAll('[data-enter-shop]'));
+    const leaveShopButton = snowdinHome.querySelector('[data-leave-shop]');
+    const choices = Array.from(snowdinHome.querySelectorAll('.shop-choices .game-choice'));
+    const welcomeLine = '* 欢迎，旅人。想去哪里看看？';
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let currentScene = 'town';
+    let selectedIndex = 0;
+    let dialogueTimer;
+
+    const selectChoice = (nextIndex, moveFocus = false) => {
+      if (!choices.length) return;
+
+      selectedIndex = (nextIndex + choices.length) % choices.length;
+      choices.forEach((choice, index) => {
+        const selected = index === selectedIndex;
+        choice.classList.toggle('is-selected', selected);
+        choice.tabIndex = selected ? 0 : -1;
+      });
+
+      if (moveFocus) choices[selectedIndex].focus();
+    };
+
+    const typeShopGreeting = () => {
+      if (dialogueTimer) window.clearInterval(dialogueTimer);
+      if (reducedMotion) {
+        shopDialogue.textContent = welcomeLine;
+        return;
+      }
+
+      let characterIndex = 0;
+      shopDialogue.textContent = '';
+      dialogueTimer = window.setInterval(() => {
+        characterIndex += 1;
+        shopDialogue.textContent = welcomeLine.slice(0, characterIndex);
+        if (characterIndex >= welcomeLine.length) window.clearInterval(dialogueTimer);
+      }, 44);
+    };
+
+    const showScene = (sceneName, { returnFocus = false } = {}) => {
+      currentScene = sceneName;
+      const isInsideShop = sceneName === 'shop';
+      townScene.hidden = isInsideShop;
+      shopScene.hidden = !isInsideShop;
+      townPanel.hidden = isInsideShop;
+      shopPanel.hidden = !isInsideShop;
+      locationLabel.textContent = isInsideShop ? 'SNOWDIN · SHOP' : 'SNOWDIN';
+      document.body.dataset.homeScene = sceneName;
+
+      if (isInsideShop) {
+        selectChoice(0);
+        typeShopGreeting();
+        window.requestAnimationFrame(() => choices[0]?.focus());
+      } else {
+        if (dialogueTimer) window.clearInterval(dialogueTimer);
+        if (returnFocus) snowdinHome.querySelector('.shop-entrance-button')?.focus();
+      }
+    };
+
+    enterShopButtons.forEach((button) => {
+      button.addEventListener('click', () => showScene('shop'));
+    });
+
+    leaveShopButton.addEventListener('click', () => showScene('town', { returnFocus: true }));
+
+    choices.forEach((choice, index) => {
+      choice.tabIndex = index === 0 ? 0 : -1;
+      choice.addEventListener('pointerenter', () => selectChoice(index));
+      choice.addEventListener('focus', () => selectChoice(index));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (currentScene !== 'shop') return;
+
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        showScene('town', { returnFocus: true });
+        return;
+      }
+
+      const activeElement = document.activeElement;
+      const focusedChoice = choices.includes(activeElement);
+      const pageHasFocus = activeElement === document.body || activeElement === document.documentElement;
+      if (!focusedChoice && !pageHasFocus) return;
+
+      if (event.key === 'Enter' && pageHasFocus) {
+        event.preventDefault();
+        choices[selectedIndex]?.click();
+        return;
+      }
+
+      if (!['ArrowUp', 'ArrowDown'].includes(event.key)) return;
+
+      event.preventDefault();
+      const offset = event.key === 'ArrowDown' ? 1 : -1;
+      selectChoice(selectedIndex + offset, true);
+    });
+  }
+
   const setNavOpen = (open, { returnFocus = false } = {}) => {
     if (!navToggle || !nav) return;
 
