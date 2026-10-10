@@ -22,9 +22,3 @@
 文章、项目数据、永久链接与现有 Jekyll / GitHub Pages 构建方式保留。样式与字体均本地提供，不依赖访客访问 CDN。
 
 数学文章使用本地 MathJax 3.2.2 `tex-svg.js`（来自 `https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js`），许可位于 `assets/licenses/MathJax-LICENSE.txt`。`assets/js/mathjax-config.js` 将处理范围限制为正文，关闭动态扩展加载；SVG 数学字形不受正文字体影响。入口按页面类型加载：文章默认启用，其他页面通过 `math: true` 启用。写法和预览草稿见 README。
-
-## Undertale 备份
-
-切换前的站点源文件保存在本机 `C:\TestProject\KaiDecker-undertale-backup-20261010`，复制后已逐文件校验。该目录独立于当前工作目录，不会随这次主题修改变化。未复制 Git 历史、生成站点、缓存或可重装依赖。
-
-备份内 `BACKUP-NOTES.md` 记录恢复和后续抽离独立主题的要点。该备份尚未创建或推送新的 GitHub 仓库。
