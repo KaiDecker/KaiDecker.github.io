@@ -2,20 +2,24 @@
 layout: default
 ---
 
-<section class="page-hero shell narrow-shell">
+<section class="page-hero {% if page.compact_header %}page-hero--compact{% endif %} shell narrow-shell">
   {% if page.eyebrow %}
     <p class="eyebrow">{{ page.eyebrow }}</p>
   {% else %}
     <p class="eyebrow">PROJECT CASE STUDY</p>
   {% endif %}
 
-  <h1>{{ page.title }}</h1>
+  {% unless page.compact_header %}
+    <h1>{{ page.title }}</h1>
 
-  {% if page.description %}
-    <p class="page-lead">
-      {{ page.description }}
-    </p>
-  {% endif %}
+    {% if page.description %}
+      <p class="page-lead">
+        {{ page.description }}
+      </p>
+    {% endif %}
+  {% else %}
+    <h1 class="visually-hidden">{{ page.title }}</h1>
+  {% endunless %}
 </section>
 
 <article class="prose shell narrow-shell">
