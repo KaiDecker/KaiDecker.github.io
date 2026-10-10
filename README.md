@@ -12,9 +12,7 @@
 - `_sass/jekyll-theme-8bit.scss`、`_sass/fonts.scss`、`_sass/rouge-github.scss`：原主题源码。
 - `_sass/site-8bit.scss`：本站布局、中文排版和响应式调整。
 - `assets/css/vendor/nes.min.css`：NES.css 2.3.0，本地加载。
-- `THEME-NOTES.md`：上游版本、许可和备份说明。
-
-当前主题不加载旧的 `main.css`、`encounter.css` 或对应脚本。
+- `THEME-NOTES.md`：上游版本、字体来源和许可说明。
 
 中文固定使用 Fusion Pixel 像素字体，字体文件和许可均保存在本地。数学公式由 MathJax 使用独立的数学字形排版。
 
@@ -91,3 +89,16 @@ bundle exec jekyll serve
 ```
 
 打开 `http://localhost:4000`。
+
+## 维护与检查
+
+文章放在 `_posts/`，模板和公式示例放在 `_drafts/`；页面布局位于 `_layouts/`，导航和页脚位于 `_includes/`。项目数据使用 `_data/projects.yml`，站点及作者信息使用 `_config.yml`。
+
+公开联系方式使用校园邮箱。项目状态和描述以实际仓库为准，避免过时或无法验证的内容。
+
+```bash
+bundle exec jekyll build --strict_front_matter
+python scripts/check_internal_links.py _site
+```
+
+GitHub Actions 的 `.github/workflows/validate.yml` 会运行构建和站内链接检查。`_site/` 和 `work/math-check-site/` 是可重新生成的预览产物，不提交到仓库。
