@@ -8,6 +8,11 @@ compact_header: true
 ---
 
 <section class="course-group">
+  <h2>CS61B · 数据结构与算法</h2>
+  <p>Java · 数据结构 · 算法</p>
+</section>
+
+<section class="course-group">
   <h2>统计与数据</h2>
   <p>数理统计 · 卫生统计学 · 回归分析 · 市场调查与分析 · 统计学选讲</p>
 </section>
