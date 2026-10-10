@@ -28,9 +28,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
-  - PROJECT_STATE.md
-  - CURRENT_TASK.md
-  - CONTEXT_INDEX.md
   - THEME-NOTES.md
   - scripts
   - work
