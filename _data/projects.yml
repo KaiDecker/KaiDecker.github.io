@@ -1,14 +1,16 @@
 - title: Exagium
   repo: exagium
-  eyebrow: Agent Engineering · Evaluation
-  description: 一个 local-first、BYOA 的 coding-agent harness：运行、追踪、评测和比较不同 Agent，使用 detached Git worktree 隔离执行环境，并通过 SQLite、FastAPI read API 与 Web UI 保留可复查的执行记录。
-  description_en: A local-first, BYOA coding-agent harness for running, tracing, evaluating, and comparing agents with detached Git worktrees, SQLite, a FastAPI read API, and a Web UI.
+  category: Software
+  anchor: exagium
+  eyebrow: Developer Tool
+  description: 一个本地优先的开发工具，用来运行、记录和比较任务，并保留可以回看的执行记录。
+  description_en: A local-first developer tool for running, recording, and comparing tasks.
   tech:
     - Python
     - FastAPI
     - SQLite
     - Git worktree
-    - Codex / Claude CLI
+    - CLI
   case_study_url: /projects/exagium/
   repository_url: https://github.com/KaiDecker/exagium
   status: 持续迭代
@@ -17,13 +19,13 @@
 
 - title: OPEN SHIFT
   repo: va11-open-shift
-  eyebrow: Game Mod · Agent-assisted Content
-  description: VA-11 HALL-A Windows 社区 Mod：在原版结局后延续酒吧叙事，保留原版调酒、音乐与存档体验；动态内容由 DeepSeek 生成，并以本地规则作为 fallback。预览版使用隔离副本，不修改 Steam 原版。
-  description_en: A Windows community mod for VA-11 HALL-A that continues the bar's story after the original ending, preserving its drink-making, music, and save experience with DeepSeek-generated content and a local rule-based fallback.
+  category: Game Mod
+  anchor: open-shift
+  eyebrow: Game Mod
+  description: VA-11 HALL-A Windows 社区 Mod：在原版结局后延续酒吧故事，保留调酒、音乐与存档体验。预览版使用隔离副本，不修改 Steam 原版。
+  description_en: A Windows community mod for VA-11 HALL-A that continues the bar's story after the original ending.
   tech:
     - Windows
-    - DeepSeek
-    - Local rule fallback
     - Modding
   case_study_url: /projects/va11-open-shift/
   repository_url: https://github.com/KaiDecker/va11-open-shift
@@ -33,8 +35,10 @@
 
 - title: "Hermes Agent · PR #82357"
   repo: hermes-agent-pr-82357
-  eyebrow: Open Source · Regression Fix
-  description: 修复 DingTalk lazy dependency 恢复后仍引用 stale _IncomingHandler inheritance 的问题，并加入回归测试；focused test suite 通过 32 项。
+  category: Open Source
+  anchor: open-source-regression
+  eyebrow: Open Source
+  description: 修复 DingTalk 依赖加载问题，并补充回归测试。
   description_en: Fixed stale _IncomingHandler inheritance after restoring the DingTalk lazy dependency, with a regression test; the focused suite passed all 32 tests.
   tech:
     - Python
@@ -44,11 +48,13 @@
   link_label: 查看 PR
   status: PR 记录
   accent: green
-  featured: false
+  featured: true
 
 - title: "Hermes Agent · PR #82470"
   repo: hermes-agent-pr-82470
-  eyebrow: Open Source · Context Design
+  category: Open Source
+  anchor: open-source-context
+  eyebrow: Open Source
   description: 为压缩流程增加结构化 CompressionContext 与 key_facts，同时保持 legacy string compatibility，并在进入流程前完成 sanitization；测试通过 97 项。
   description_en: Added structured CompressionContext and key_facts to the compression flow while preserving legacy string compatibility and sanitizing inputs; 97 tests passed.
   tech:
@@ -64,7 +70,9 @@
 
 - title: CUMCM 2025 · B
   repo: CUMCM-2025-B
-  eyebrow: Mathematical Modeling
+  category: Modeling
+  anchor: mathematical-modeling
+  eyebrow: Competition Archive
   description: 全国大学生数学建模竞赛 B 题的代码、分析与支撑材料归档，也是一次将统计分析、建模和协作放进限时问题中的实践。
   description_en: Code, analysis, and supporting materials from the 2025 CUMCM problem B.
   tech:
@@ -78,7 +86,9 @@
 
 - title: PlateReader YOLOv8
   repo: PlateReader-YOLOv8
-  eyebrow: Computer Vision
+  category: Experiment
+  anchor: machine-learning
+  eyebrow: Experiment
   description: 基于 YOLOv8 的车牌检测与识别实验，记录数据处理、模型训练、推理验证和工程实现过程。
   description_en: A YOLOv8-based license plate detection and recognition experiment, from data preparation to inference.
   tech:
@@ -92,7 +102,9 @@
 
 - title: CS50
   repo: CS50
-  eyebrow: Computer Science
+  category: Coursework
+  anchor: computer-science
+  eyebrow: Coursework
   description: CS50 课程练习与阶段记录，从 C、Python、算法和基础 Web 开发入手，补齐计算机科学基础。
   description_en: Coursework and exercises covering C, Python, algorithms, and introductory web development.
   tech:

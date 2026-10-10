@@ -1,17 +1,17 @@
-title: 咸蛋超人迪卡
+title: KaiDecker
 title_en: KaiDecker
-description: "咸蛋超人迪卡（KaiDecker）的个人网站：统计学、计算机基础、Agent、后端、机器学习、课程与项目记录。"
+description: "KaiDecker 的个人网站，记录项目、文章、课程与生活。"
 url: "https://kaidecker.github.io"
 baseurl: ""
 lang: zh-CN
 timezone: Asia/Shanghai
 
 markdown: kramdown
-permalink: /writing/:year/:month/:day/:title/
+permalink: /posts/:year/:month/:day/:title/
 
 # Personal information
 author:
-  name: 咸蛋超人迪卡
+  name: KaiDecker
   name_en: KaiDecker
   handle: KaiDecker
   school: 北京林业大学
@@ -19,27 +19,8 @@ author:
   graduation: 2028
   location: Beijing, China
   github: https://github.com/KaiDecker
+  avatar: https://github.com/KaiDecker.png?size=160
   email: reunited9130@bjfu.edu.cn
-
-# Public content freshness
-content_dates:
-  academic: "2026 年 8 月 29 日"
-  projects: "2026 年 8 月 29 日"
-
-# Academic snapshot
-academic:
-  gpa: "3.71 / 4.00"
-  average: "89.18 / 100"
-  credit_product: "89.03"
-  credits: "113.1"
-
-  cumulative_class_rank: "6"
-  cumulative_major_rank: "11 / 66"
-
-  latest_year: "2025–2026"
-  latest_year_credit_product: "91.57"
-  latest_year_class_rank: "3"
-  latest_year_major_rank: "4"
 
 # Keep the generated site clean
 exclude:
@@ -50,6 +31,7 @@ exclude:
   - PROJECT_STATE.md
   - CURRENT_TASK.md
   - CONTEXT_INDEX.md
+  - THEME-NOTES.md
   - scripts
   - work
   - node_modules

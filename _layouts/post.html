@@ -3,18 +3,28 @@ layout: default
 ---
 <article class="post shell narrow-shell">
   <header class="post-header reveal">
-    <a class="back-link" href="{{ '/writing/' | relative_url }}">← 返回写作</a>
+    <a class="back-link" href="{{ '/posts/' | relative_url }}">← Posts</a>
     <p class="eyebrow">{{ page.date | date: '%Y年%-m月%-d日' }}</p>
     <h1>{{ page.title }}</h1>
-    {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
-    {% if page.tags %}
-      <div class="tag-row" aria-label="文章标签">
-        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-      </div>
-    {% endif %}
+    <time class="post-meta" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>
   </header>
 
   <div class="prose post-content reveal reveal-delay-1">
     {{ content }}
   </div>
+
+  <nav class="post-navigation" aria-label="文章导航">
+    {% if page.previous %}
+      <a class="post-navigation-item" href="{{ page.previous.url | relative_url }}">
+        <span>上一篇</span>
+        <strong>← {{ page.previous.title }}</strong>
+      </a>
+    {% else %}<span></span>{% endif %}
+    {% if page.next %}
+      <a class="post-navigation-item post-navigation-next" href="{{ page.next.url | relative_url }}">
+        <span>下一篇</span>
+        <strong>{{ page.next.title }} →</strong>
+      </a>
+    {% endif %}
+  </nav>
 </article>
