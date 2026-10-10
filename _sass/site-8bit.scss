@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Fusion Pixel";
+  src: url("../fonts/Fusion-Pixel/fusion-pixel-12px-proportional-zh_hans.otf.woff2?v=1") format("woff2"),
+       url("../fonts/Fusion-Pixel/fusion-pixel-12px-proportional-zh_hans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --normal-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --body-font: "Fusion Pixel", var(--normal-font);
+  --display-font: "Press Start 2P", "Fusion Pixel", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body.eightbit-site {
+  margin: 0; padding: 0; background: #fff; color: #333b43;
+  font: 16px/1.9 var(--body-font);
+  overflow-wrap: break-word;
+}
+.eightbit-site a { color: #166a93; }
+.eightbit-site a:hover { color: #084b70; text-decoration: underline; text-underline-offset: 4px; }
+.eightbit-site a:focus-visible { outline: 3px dashed #166a93; outline-offset: 5px; }
+.eightbit-site img { height: auto; }
+.eightbit-site .button svg { width: 18px; height: 18px; }
+.eightbit-site header, .eightbit-site section, .eightbit-site footer {
+  float: none; position: static; width: auto; min-height: 0; margin: 0; padding: 0;
+}
+.eightbit-site h1, .eightbit-site h2, .eightbit-site h3,
+.eightbit-site h4, .eightbit-site h5, .eightbit-site h6 {
+  font-family: inherit; line-height: 1.6; font-weight: 600;
+}
+.eightbit-site p { margin: 0 0 14px; }
+.eightbit-site .site-wrapper {
+  display: grid; grid-template-columns: 264px minmax(0, 1fr); grid-template-rows: auto 1fr;
+  column-gap: 64px; row-gap: 22px; width: min(1040px, calc(100% - 64px));
+  margin: 48px auto 40px; align-items: start;
+}
+.site-header { grid-column: 1; grid-row: 1; }
+.site-main { grid-column: 2; grid-row: 1 / 3; min-width: 0; padding-top: 5px; }
+.site-footer { grid-column: 1; grid-row: 2; }
+.profile-card { text-align: center; padding: 25px 17px 22px; }
+.avatar-link { display: inline-block; line-height: 0; margin-bottom: 18px; }
+.profile-avatar { width: 88px; border: 4px solid #fff; image-rendering: pixelated; }
+.site-name { font: 18px/1.6 var(--display-font); }
+.eightbit-site .site-name a { color: #fff; text-decoration: none; text-shadow: 2px 2px #153b4c, -1px -1px #153b4c, 1px -1px #153b4c, -1px 1px #153b4c; }
+.eightbit-site .profile-note { font-size: 13px; color: #173f53; margin: 15px 0 20px; }
+.social-links { display: flex; justify-content: center; gap: 20px; }
+.eightbit-site .social-links a { color: #15394b; font-size: 12px; white-space: nowrap; }
+.social-links .nes-icon { margin-right: 5px; vertical-align: middle; }
+.site-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 4px 0; }
+.eightbit-site .site-nav a { display: flex; align-items: center; justify-content: center; min-height: 42px; padding: 8px 5px; color: #31383d; font: 10px/1.8 var(--display-font); text-decoration: none; }
+.eightbit-site .site-nav a.is-primary { color: #fff; }
+.site-footer .footer { padding: 17px 9px; font: 10px/1.9 var(--display-font); }
+.eightbit-site .site-footer p { margin: 0; }
+.eightbit-site .footer a { color: #7d481d; }
+.eightbit-site .home-section { margin-bottom: 38px; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 15px; }
+.eightbit-site .section-label, .eightbit-site .eyebrow { margin: 0 0 20px; color: #6a737b; font: 12px/1.8 var(--display-font); }
+.eightbit-site .section-heading .section-label { margin: 0; }
+.more-link { font-size: 12px; white-space: nowrap; }
+.eightbit-site .home-about { margin-bottom: 32px; }
+.eightbit-site .home-about p { font-size: 16px; }
+.eightbit-site .nes-container.post-list { margin: 0 4px; padding: 5px 20px; }
+.post-row { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: baseline; gap: 18px; padding: 17px 0; }
+.post-row + .post-row { border-top: 1px dashed #d6dce0; }
+.post-row time, .writing-item time { color: #7c848c; font: 12px/1.8 monospace; }
+.eightbit-site .post-row h3 { margin: 0; font-size: 15px; font-weight: 500; }
+.eightbit-site .post-row a { color: #333b43; }
+.eightbit-site .featured-projects { margin: 0 4px; padding: 4px 20px; }
+.project-row { padding: 18px 0; }
+.project-row + .project-row { border-top: 1px dashed #d6dce0; }
+.eightbit-site .project-row h3 { font-size: 16px; margin: 0 0 5px; }
+.eightbit-site .project-row p { font-size: 13px; color: #68737c; margin: 0; line-height: 1.85; }
+.home-course p { font-size: 14px; color: #68737c; }
+.page-hero { margin-bottom: 26px !important; }
+.page-hero h1 { font-size: 26px; margin-bottom: 12px; }
+.page-hero .eyebrow { margin-bottom: 12px; }
+.page-lead { color: #6a737b; font-size: 14px; }
+.eightbit-site .page-hero--compact { margin-bottom: 24px !important; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: 16px; top: -100px; background: #fff; padding: 8px 16px; z-index: 10; }
+.skip-link:focus { top: 10px; }
+.writing-item { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 20px; padding: 22px 0; border-bottom: 1px dashed #ced6dc; }
+.writing-item:first-child { border-top: 1px dashed #ced6dc; }
+.eightbit-site .writing-item h2 { font-size: 17px; margin: 0; font-weight: 500; }
+.eightbit-site .simple-project { padding: 22px 0; border-top: 1px dashed #ced6dc; }
+.simple-project h2 { font-size: 18px; margin: 0 0 8px; }
+.simple-project p { font-size: 14px; color: #67727b; }
+.simple-project-links { display: flex; gap: 22px; font-size: 13px; }
+.prose { line-height: 2; }
+.prose h2 { font-size: 21px; margin-top: 30px; margin-bottom: 15px; }
+.prose h3 { font-size: 18px; margin-top: 26px; }
+.prose p, .prose ul, .prose ol { margin-bottom: 22px; }
+.prose img { display: block; max-width: 100%; margin: 22px auto; }
+.prose table { display: block; overflow-x: auto; max-width: 100%; font-size: 14px; }
+.prose pre { max-width: calc(100% - 16px); margin: 24px 8px; font-size: 13px; }
+.prose code { overflow-wrap: anywhere; }
+.prose pre code { overflow-wrap: normal; }
+.prose blockquote { border-left: 4px solid #58c7ff; background: #f1faff; padding: 14px 18px; margin: 20px 0; font-style: normal; }
+.prose blockquote p:last-child { margin-bottom: 0; }
+.eightbit-site .course-group { padding: 20px 0; border-top: 1px dashed #ced6dc; }
+.course-group h2 { margin-top: 0; font-size: 17px; }
+.course-group p { font-size: 14px; }
+.eightbit-site .post-header { padding-bottom: 22px; margin-bottom: 28px; border-bottom: 2px solid #dce3e8; }
+.post-header h1 { font-size: clamp(23px, 3vw, 30px); margin: 22px 0 12px; }
+.post-header .eyebrow { display: none; }
+.post-meta, .back-link { font-size: 12px; color: #747f88; }
+.post-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; border-top: 1px dashed #ced6dc; margin-top: 36px; padding-top: 22px; }
+.post-navigation a span { display: block; color: #747f88; font-size: 12px; }
+.post-navigation strong { font-size: 14px; font-weight: 500; color: #166a93; }
+.post-navigation-next { text-align: right; }
+.secondary-copy { color: #74808a; font-size: 14px; }
+.error-page { padding-top: 30px !important; }
+.error-page h1 { font-size: 26px; }
+@media (max-width: 900px) {
+  .eightbit-site .site-wrapper { width: calc(100% - 40px); grid-template-columns: 230px minmax(0, 1fr); column-gap: 32px; margin-top: 30px; }
+  .site-name { font-size: 16px; }
+  .site-nav { gap: 10px; }
+  .eightbit-site .site-nav a { font-size: 9px; }
+  .post-row { grid-template-columns: 1fr; gap: 4px; }
+}
+@media (max-width: 680px) {
+  .eightbit-site .site-wrapper { display: flex; flex-direction: column; width: calc(100% - 36px); margin: 22px auto; gap: 32px; }
+  .site-header, .site-main, .site-footer { width: 100% !important; }
+  .site-main { padding-top: 0; }
+  .profile-card { display: grid; grid-template-columns: 64px minmax(0, 1fr); column-gap: 18px; text-align: left; padding: 18px 16px; }
+  .avatar-link { grid-column: 1; grid-row: 1 / 4; margin: 0; align-self: center; }
+  .profile-avatar { width: 64px; }
+  .eightbit-site .site-name { font-size: 15px; margin: 0 0 8px; }
+  .eightbit-site .profile-note { margin: 0 0 10px; font-size: 12px; }
+  .social-links { gap: 18px; justify-content: flex-start; }
+  .site-nav { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-top: 16px; }
+  .eightbit-site .site-nav a { font-size: 8px; min-height: 40px; padding: 6px 2px; }
+  .site-footer { margin-top: 8px !important; }
+  .site-footer .footer { padding: 16px; font-size: 9px; }
+  .eightbit-site .home-section { margin-bottom: 32px; }
+  .post-row { grid-template-columns: 80px minmax(0,1fr); gap: 12px; }
+  .eightbit-site .post-row h3 { font-size: 14px; }
+  .post-navigation { grid-template-columns: 1fr; }
+  .post-navigation-next { text-align: left; }
+  .post-navigation > span:empty { display: none; }
+}
+@media (max-width: 380px) {
+  .eightbit-site .site-wrapper { width: calc(100% - 28px); }
+  .profile-card { column-gap: 12px; padding: 16px 10px; }
+  .eightbit-site .site-name { font-size: 13px; }
+  .site-nav { grid-template-columns: 1fr 1fr; }
+  .eightbit-site .site-nav a { font-size: 10px; }
+  .post-row, .writing-item { grid-template-columns: 1fr; gap: 5px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.prose mjx-container { overflow-wrap: normal; }
+.prose mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 8px 0; }
