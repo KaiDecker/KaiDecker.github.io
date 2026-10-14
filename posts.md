@@ -13,11 +13,14 @@ compact_header: true
 
 <section class="shell narrow-shell section writing-archive">
   {% if site.posts.size > 0 %}
-    {% for post in site.posts %}
+    {% assign pinned_posts = site.posts | where: 'pinned', true %}
+    {% assign regular_posts = site.posts | where_exp: 'post', 'post.pinned != true' %}
+    {% assign ordered_posts = pinned_posts | concat: regular_posts %}
+    {% for post in ordered_posts %}
       <article class="writing-item">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
         <div>
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <h2>{% if post.pinned %}<span class="pinned-label">置顶</span> {% endif %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         </div>
       </article>
     {% endfor %}
