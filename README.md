@@ -57,6 +57,8 @@ status: 持续迭代
 3. 文件名改为 `YYYY-MM-DD-title.md`
 4. 更新 front matter 与正文
 
+在 front matter 添加 `pinned: true` 可将文章置顶于首页和 Posts 列表。置顶文章之间、普通文章之间仍按日期倒序排列，首页共显示三篇文章。删除该字段或改为 `pinned: false` 即可取消置顶。
+
 ### 数学公式
 
 `layout: post` 的文章自动加载本地 MathJax 3.2.2。普通页面需要在 front matter 添加 `math: true`；文章可用 `math: false` 关闭。
