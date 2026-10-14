@@ -65,6 +65,7 @@ body.eightbit-site {
 .post-row { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: baseline; gap: 18px; padding: 17px 0; }
 .post-row + .post-row { border-top: 1px dashed #d6dce0; }
 .post-row time, .writing-item time { color: #7c848c; font: 12px/1.8 monospace; }
+.pinned-label { display: inline-block; color: #68737c; font-size: 12px; font-weight: 400; margin-right: 6px; vertical-align: middle; }
 .eightbit-site .post-row h3 { margin: 0; font-size: 15px; font-weight: 500; }
 .eightbit-site .post-row a { color: #333b43; }
 .eightbit-site .featured-projects { margin: 0 4px; padding: 4px 20px; }
